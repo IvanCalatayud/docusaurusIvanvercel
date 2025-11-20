@@ -4,17 +4,15 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sitio de Ivan Calatayud',
-  tagline: 'Dinosaurios de Ivan ',
+  tagline: 'Dinosaurios de Ivan',
   favicon: 'static/img/favicon.png',
 
-  // URL i baseUrl correctes per Vercel
   url: 'https://docusaurusivanvercel-r5748l65s-ivancalatayuds-projects.vercel.app',
   baseUrl: '/',
 
-  organizationName: 'IvanCalatayud', // GitHub user/org
-  projectName: 'docusaurusIvanvercel', // Nom del repo
+  organizationName: 'IvanCalatayud',
+  projectName: 'docusaurusIvanvercel',
 
-  // Ignorar errors d'enllaços trencats
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
 
@@ -38,9 +36,6 @@ const config = {
             xslt: true,
           },
           editUrl: 'https://github.com/IvanCalatayud/docusaurusIvanvercel/edit/main/blog/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -51,27 +46,13 @@ const config = {
 
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
-    colorMode: {
-      respectPrefersColorScheme: true,
-    },
+    colorMode: { respectPrefersColorScheme: true },
     navbar: {
       title: 'Ivan Calatayud',
-      logo: {
-        alt: 'Lloc de Ivan',
-        src: 'img/logo.svg',
-      },
+      logo: { alt: 'Lloc de Ivan', src: 'img/logo.svg' },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Inici',
-        },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Inici' },
+        { href: 'https://github.com/facebook/docusaurus', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
@@ -80,40 +61,22 @@ const config = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Tutorial',
-              href: 'https://docusaurus.io/',
-            },
+            { label: 'Tutorial', href: 'https://docusaurus.io/' },
           ],
         },
         {
           title: 'Comunitat',
           items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+            { label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus' },
+            { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
+            { label: 'X', href: 'https://x.com/docusaurus' },
           ],
         },
         {
           title: 'Mes',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
+            { label: 'Blog', to: '/blog' },
+            { label: 'GitHub', href: 'https://github.com/facebook/docusaurus' },
           ],
         },
       ],

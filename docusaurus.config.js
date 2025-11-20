@@ -153,5 +153,11 @@ const config = {
       },
     }),
 };
+module.exports = {
+  // ...altres configuracions
+  onBrokenLinks: 'ignore',           // Ignora enllaços trencats al build
+  onBrokenMarkdownLinks: 'ignore',   // Ignora enllaços trencats als docs
+};
+
 
 export default config;

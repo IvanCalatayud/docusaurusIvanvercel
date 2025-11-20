@@ -4,16 +4,17 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sitio de Ivan Calatayud',
-  tagline: 'Dinosaurios de Ivan',
+  tagline: 'Dinosaurios de Ivan ',
   favicon: 'static/img/favicon.png',
 
+  // URL i baseUrl correctes per Vercel
   url: 'https://docusaurusivanvercel-r5748l65s-ivancalatayuds-projects.vercel.app',
   baseUrl: '/',
 
-  organizationName: 'IvanCalatayud',
-  projectName: 'docusaurusIvanvercel',
+  organizationName: 'IvanCalatayud', // GitHub user/org
+  projectName: 'docusaurusIvanvercel', // Nom del repo
 
-  // Ignorar errors d'enllaços trencats per a Vercel
+  // Ignorar errors d'enllaços trencats
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
 
@@ -32,7 +33,14 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
           editUrl: 'https://github.com/IvanCalatayud/docusaurusIvanvercel/edit/main/blog/',
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -119,4 +127,3 @@ const config = {
 };
 
 module.exports = config;
-
